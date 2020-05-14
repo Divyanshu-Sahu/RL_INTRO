@@ -30,7 +30,7 @@ qtable= np.random.uniform(low=-2, high= 0, size= [30,30,3])
 
 
 
-def discrete(observation):     '''For creating discrete timesteps'''
+def discrete(observation):   
 	pos, vel= observation
 	pos_b= np.digitize(pos, pos_space)
 	vel_b= np.digitize(vel,vel_space)
